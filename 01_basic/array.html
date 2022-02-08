@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+        </head>
+        <body>
+            <script>
+                var member = ['egoing', 'k8805', 'sorialgi']
+                alert(member[0]) // egoing
+
+                function get_members(){
+                    return ['egoing', 'k8805', 'sorialgi']
+                }
+                var members = get_members()
+                for(i = 0; i < 3; i++){
+                    alert(members[i])
+                } // 'egoing', 'k8805', 'sorialgi'
+
+                // for statement
+                for(i = 0; i < members.length; i++){ // length
+                    document.write(members[i].toUpperCase()); // capital
+                    document.write('<br />');
+                } 
+
+                // push
+                var li = ['a', 'b', 'c', 'd', 'e'];
+                li.push('f')
+                alert(li) // a, b, c, d, e, f
+
+                // concat
+                li = li.concat(['f', 'g'])
+                alert(li) // a, b, c, d, e, f, f, g
+
+                // unshift
+                li.unshift('z')
+                alert(li) // z, a, b, c, d, e, f, f, g
+
+                // splice
+                li.splice(2, 3, 'B')
+                alert(li) // z, a, B, e, f, f, g
+
+                // shift
+                li.shift() 
+                alert(li) // a, B, e, f, f, g
+
+                // pop
+                li.pop() 
+                alert(li) // a, B, e, f, f
+
+                // sort
+                li.sort()
+                alert(li) // B, a, e, f, f
+
+                // reverse
+                li.reverse()
+                alert(li) // f, f, e, a, B
+
+            </script>
+        </body>
+        
+    </html>
