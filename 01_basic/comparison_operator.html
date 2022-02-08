@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <body>
+            <script type='text/javascript'>
+                alert(1==2); // false
+                alert(1==1) ;// true
+                alert('one' == 'two'); // false
+                alert('one' == 'one'); // true
+
+                alert(1=='1'); // true
+                alert(1==='1'); /// false. === is strict operator
+
+                alert(null == undefined); // true
+                alert(null === undefined); // false
+                alert(true == 1); // true
+                alert(true === 1); // false
+                alert(true == '1'); // true
+                alert(true === '1'); // false
+
+                alert(0 === -0); // true
+                alert(NaN === NaN) // false. Nan is like 0/0 (not number)
+                
+                alert(1 != 2); // true
+                alert(1 != 1); // false
+                alert('one' != 'two'); // true
+                alert('one' != 'one'); // false
+
+                alert(1 != '1') // false
+                alert(1 !== '1'); // true
+                
+                alert(10 > 20); // false
+                alert(10 > 1); // true
+                alert(10 > 10); // false
+
+                alert(10 >= 20); // false
+                alert(10 >= 1); // true
+                alert(10 >= 10) // true
+            </script>
+        </body>
+        
+    </html>
