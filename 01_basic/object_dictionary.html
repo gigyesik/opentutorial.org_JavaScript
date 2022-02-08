@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+        </head>
+        <body>
+            <script>
+                // dictionary
+                var grades = {'egoing' : 10, 'k8805' : 6, 'sorialgi' : 80}; // key : value
+
+                // make object
+                var grades = {};
+                grades['egoing'] = 10; // egoing : 10
+
+                var grades = new Object();
+                grades['egoing'] = 10; // egoing : 10
+                
+                // value
+                var grades = {'egoing' : 10, 'k8805' : 6, 'sorialgi' : 80};
+                alert(grades.sorialgi); // 80
+                alert(grades['sorialgi']); // 80
+
+                // get key, value
+                for(key in grades){
+                    document.write('key : '+ key + ' value : ' + grades[key] + '<br />');
+                } // key : '..' value : '..' \n
+
+                // object oriented (do not understand yet)
+                var grades = {
+                    'list' : {'egoing' : 10, 'k8805' : 6, 'sorialgi' : 80},
+                    'show' : function(){
+                        for(var name in this.list){
+                            document.write(name + ':' + this.list[name] + '<br />');
+                        }
+                    }
+                }
+                grades.show(); // list
+            </script>
+        </body>
+        
+    </html>
