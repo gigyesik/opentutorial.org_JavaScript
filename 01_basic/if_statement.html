@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+        </head>
+        <body>
+            <script>
+                // if statements
+                if(true){
+                    alert('result : true');
+                } // result : true
+                
+                if(false){
+                    alert('result : true');
+                } // Nothing
+
+                if(true){
+                    alert(1);
+                    alert(2);
+                    alert(3);
+                    alert(4);
+                }
+                alert(5); // 12345
+
+                if(false){
+                    alert(1);
+                    alert(2);
+                    alert(3);
+                    alert(4);
+                }
+                alert(5); // 5
+
+                if(true){
+                    alert(1);
+                } else {
+                    alert(2);
+                } // 1
+
+                if(false){
+                    alert(1);
+                } else {
+                    alert(2);
+                } // 2
+
+                if(false){
+                    alert(1);
+                } else if(true){
+                    alert(2);
+                } else if(true){
+                    alert(3);
+                } else {
+                    alert(4);
+                } // 2
+
+                id = prompt('아이디를 입력하세요.')
+                if(id == 'egoing'){
+                    alert('아이디가 일치 합니다.')
+                } else {
+                    alert('아이디가 일치하지 않습니다.')
+                }
+
+                id = prompt('아이디를 입력하세요.')
+                if(id == 'egoing'){
+                    password = prompt('비밀번호를 입력해주세요.');
+                    if(password == '111111'){
+                        alert('인증 했습니다')
+                    } else {
+                        alert('인증에 실패 했습니다.')
+                    }
+                } else {
+                    alert('인증에 실패 했습니다.')
+                }
+
+                // &&
+                if(true && false){
+                    alert(1);
+                } // false. true when both are true  
+
+                id = prompt('아이디를 입력하세요.')
+                password = prompt('비밀번호를 입력해주세요.');
+                    if(id == 'egoing' && password == '111111'){
+                        alert('인증 했습니다.');
+                    } else {
+                        alert('인증에 실패 했습니다.');
+                    }
+                
+                // ||
+                if(true || false){
+                    alert(1);
+                } // true. false when borh are false
+
+                // !
+                alert(!true); // false
+                alert(!false); // true
+
+                // substitute boolean
+                if(0){
+                    alert(1)
+                } // nothing
+
+                alert(!undefined); // true
+                alert(!''); // true. '' is undefined
+                alert(!undefined); // true
+                alert(!null); // true
+                alert(!NaN) // true
+            </script>
+        </body>
+        
+    </html>
