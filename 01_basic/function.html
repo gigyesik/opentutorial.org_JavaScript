@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+        </head>
+        <body>
+            <script>
+                // numberring
+                function numberring(){
+                    i = 0;
+                    while(i < 10){
+                        document.write(i);
+                        i += 1;
+                    }
+                }
+                numberring(); // 0123456789
+                // it can definite
+                /*
+                var numberring = function(){...}
+                */
+
+                // return
+                function get_member(){
+                    return 'egoing';
+                    return 'k8805';
+                    return 'sorialgi';
+                }
+                alert(get_member()); // egoing
+
+                // get_argument(arg)
+                function get_argument(arg1, arg2){
+                    return arg1 + arg2;
+                }
+                alert(get_argument(10, 20)); // 30
+            </script>
+        </body> 
+        
+    </html>
