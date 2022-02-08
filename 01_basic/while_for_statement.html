@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+        </head>
+        <body>
+            <script>
+                // infinite loop
+                while(false){
+                    document.write('coding everybody <br />')
+                } // nothing. if true, infinite loop.
+                // <br /> is equal to '\n' in 'write'
+
+                // while statement
+                var i = 0;
+                while(i < 10){
+                    document.write('coding everybody <br />');
+                    i ++ // i = i + 1
+                } // coding everybody * 10 with line break each
+
+                // for statement
+                for(var i = 0; i < 10; i++){
+                    document.write('coding everybody <br />')
+                } // coding everybody * 10 with line break each
+
+                // break
+                for(var i = 0; i < 10; i++){
+                    if(i === 5){
+                        break;
+                    }
+                    document.write('coding everybody' + i + '<br />')
+                } // coding everbody 01234
+
+                // continue
+                for(var i = 0; i< 10; i++){
+                    if(i === 5){
+                        continue;
+                    }
+                    document.write('coding everybody' + i + '<br />')
+                } // coding everybody 012346789
+
+                // loop in loop
+                for(var i = 0; i < 10; i++){
+                    for(var j = 0; j < 10; j++){
+                        document.write(string(i) + string(j) + '<br />');
+                    } 
+                } // 00, 01, 02, ... , 99
+            </script>
+        </body>
+        
+    </html>
