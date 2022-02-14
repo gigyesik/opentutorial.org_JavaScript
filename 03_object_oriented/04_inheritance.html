@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function Person(name){ // constructor
+                this.name = name; // property
+                }
+            Person.prototype.name = null;
+            Person.prototype.introduce = function() {
+                return 'My name is ' + this.name;
+            }
+            var p1 = new Person('egoing');
+            document.write(p1.introduce() + '<br />'); // My name is egoing
+
+            function Programmer(name) {
+                this.name = name;
+            }
+            Programmer.prototype = new Person(); // inherit
+            Programmer.prototype.coding = function() { // Person + Programmer + method
+                return 'hello world';
+            }
+
+            var p1 = new Programmer('egoing');
+            document.write(p1.introduce() + '<br />'); // My name is egoing
+            document.write(p1.coding()); // hello world
+        </script>
+    </body>
+</html>
