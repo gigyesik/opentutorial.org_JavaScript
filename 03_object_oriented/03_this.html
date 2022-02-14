@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            /*
+            // 'this' is context (in func, global)
+            function func(){
+                if(window === this){
+                    document.write('window === this');
+                }
+            }
+            func(); // window === this
+            */
+
+            /*
+            // 'this' is object (in method)
+            var o = {
+                func : function(){
+                    if(o === this){
+                        document.write('o === this');
+                    }
+                }
+            }
+            o.func(); // o === this
+            */
+
+            /*
+            // new, contructor
+            var funcThis = null;
+
+            function Func(){
+                funcThis = this;
+            }
+            var o1 = Func();
+            if(funcThis === window){
+                document.write('window <br />'); // window
+            }
+            var o2 = new Func();
+            if(funcThis === o2){
+                document.write('o2 <br />'); // o2
+            }
+            var o3 = Func();
+            if(funcThis === o3){ // window
+                document.write('o3 <br />'); // Null
+            }
+            function Func2(){
+                document.write(o);
+            }
+            var o = new Func2(); // undefined
+            */
+
+            // apply, call
+            var o = {}
+            var p = {}
+            function func() {
+                switch(this){
+                    case o:
+                        document.write('o<br />');
+                        break;
+                    case p:
+                        document.write('p<br />');
+                        break;
+                    case window:
+                        document.write('window<br />');
+                        break;
+                }
+            }
+            func(); // window
+            func.apply(o); // o
+            func.apply(p); // p
+        </script>
+    </body>
+</html>
